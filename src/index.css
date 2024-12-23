@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f0;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "aside nav"
+    "aside section"
+    "aside section";
+}
+
+aside {
+  grid-area: aside;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  height: 100vh;
+}
+nav {
+  grid-area: nav;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+section {
+  grid-area: section;
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
