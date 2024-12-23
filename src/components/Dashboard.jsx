@@ -1,8 +1,9 @@
+import Layout from "../routes/Layout";
 
 export default function Dashboard() {
   return (
     <div>
-      this is dashboard!
+      <Layout />
     </div>
   )
 }

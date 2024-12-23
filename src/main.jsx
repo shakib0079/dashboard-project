@@ -9,11 +9,11 @@ import Dashboard from './components/Dashboard';
 let router = createBrowserRouter([
   {
     path: "/",
-    Component: Layout,
+    Component: Dashboard,
     children: [
       {
         path: "/",
-        Component: Dashboard,
+        Component: Layout,
       },
     ],
   },
