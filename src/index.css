@@ -35,7 +35,7 @@ aside {
 }
 
 aside.collapse {
-  width: 60px;
+  width: auto;
   align-items: center;
 }
 
@@ -43,11 +43,14 @@ aside button {
   background-color: transparent;
   width: 100%;
   text-align: start;
-  padding: 0.5rem;
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+aside button:hover {
+  background-color: #c94c4c;
 }
 
 nav {
@@ -73,7 +76,7 @@ section {
   }
   aside {
     width: auto;
-    height: min-content;
+    height: auto;
     position: fixed;
     top: 50px;
   }

@@ -7,7 +7,10 @@ export default function Layout() {
   return (
     <main>
         <aside className={collapse ? 'collapse' : ''}>
-          <button onClick={() => setCollapse(!collapse)}>Toggle</button>
+          <button onClick={() => setCollapse(!collapse)}>
+            <img src="menu.svg" alt=""/>
+          </button>
+          {/* Sidebar Menu */}
         </aside>
         <nav>
           Navbar
