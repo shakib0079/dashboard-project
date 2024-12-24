@@ -1,4 +1,5 @@
 import { useState } from "react"
+import SidebarMenu from "../components/SidebarMenu"
 
 export default function Layout() {
   const [collapse, setCollapse] = useState(false)
@@ -10,7 +11,7 @@ export default function Layout() {
           <button onClick={() => setCollapse(!collapse)}>
             <img src="menu.svg" alt=""/>
           </button>
-          {/* Sidebar Menu */}
+          <SidebarMenu />
         </aside>
         <nav>
           Navbar

@@ -1,0 +1,28 @@
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.sidebar-menu-item {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.sidebar-menu-item:hover {
+  background-color: #c94c4c;
+}
+
+.sidebar-menu-item.active {
+  background-color: #c94c4c;
+}
+
+.sidebar-item-link {
+  color: #fff;
+  text-decoration: none;
+}
