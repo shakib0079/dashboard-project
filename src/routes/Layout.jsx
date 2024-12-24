@@ -6,9 +6,11 @@ export default function Layout() {
 
   return (
     <main>
-        <aside className={collapse ? 'collapse' : ''}>Sidebar</aside>
+        <aside className={collapse ? 'collapse' : ''}>
+          <button onClick={() => setCollapse(!collapse)}>Toggle</button>
+        </aside>
         <nav>
-          <button onClick={() => setCollapse(!collapse)}>Collaspe</button>
+          Navbar
         </nav>
         <section>Content</section>
     </main>
